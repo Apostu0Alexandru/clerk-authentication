@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { UserButton } from '@clerk/nextjs'
+import { metadata } from './layout'
 
 export default function Home() {
   return (
@@ -107,6 +109,9 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+        <div>
+          <metadata/>
+        </div>
       </div>
     </main>
   )
